@@ -12,7 +12,7 @@ RUN if [ "$env" = "prod" ]; then \
     else \
     npm ci --force; \
     fi
- 
+
 COPY  --chown=node:node . .
 
 # Disable Next.js telemetry collection
